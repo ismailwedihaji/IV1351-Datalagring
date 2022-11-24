@@ -1,0 +1,111 @@
+create table lesson (
+	id int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	skill_level VARCHAR(12),
+	min_student VARCHAR(2),
+	max_student VARCHAR(2),
+	genre VARCHAR(9),
+	time VARCHAR(50),
+	lesson_type VARCHAR(10),
+	payment_id int NOT NULL REFERENCES payment,
+	instrument_id int NOT NULL REFERENCES instrument
+);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (1, 'advance', 15, 30, 'rock', '2:11 PM', 'indivisual', 98, 48);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (2, 'begginer', 15, 30, 'rock', '4:06 PM', 'ensembles', 14, 84);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (3, 'begginer', 15, 30, 'country', '9:16 AM', 'indivisual', 22, 66);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (4, 'begginer', 15, 30, 'rock', '10:56 AM', 'group', 31, 67);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (5, 'advance', 15, 30, 'reggae', '2:43 PM', 'indivisual', 6, 93);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (6, 'intermediate', 15, 30, 'country', '11:16 AM', 'indivisual', 43, 20);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (7, 'intermediate', 15, 30, 'disco', '2:51 PM', 'group', 92, 85);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (8, 'begginer', 15, 30, 'disco', '12:53 PM', 'indivisual', 62, 8);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (9, 'advance', 15, 30, 'disco', '2:46 PM', 'ensembles', 100, 87);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (10, 'intermediate', 15, 30, 'classical', '2:22 PM', 'group', 69, 97);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (11, 'intermediate', 15, 30, 'disco', '12:54 PM', 'group', 63, 33);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (12, 'intermediate', 15, 30, 'reggae', '1:15 PM', 'ensembles', 76, 40);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (13, 'advance', 15, 30, 'country', '8:01 AM', 'ensembles', 76, 28);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (14, 'begginer', 15, 30, 'disco', '11:19 AM', 'group', 41, 74);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (15, 'intermediate', 15, 30, 'country', '1:35 PM', 'group', 24, 44);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (16, 'advance', 15, 30, 'country', '4:20 PM', 'group', 21, 10);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (17, 'advance', 15, 30, 'reggae', '10:17 AM', 'group', 56, 13);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (18, 'intermediate', 15, 30, 'disco', '12:57 PM', 'ensembles', 72, 99);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (19, 'advance', 15, 30, 'reggae', '3:22 PM', 'group', 18, 74);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (20, 'intermediate', 15, 30, 'country', '3:32 PM', 'group', 87, 74);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (21, 'begginer', 15, 30, 'reggae', '10:55 AM', 'ensembles', 44, 45);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (22, 'advance', 15, 30, 'country', '2:51 PM', 'group', 59, 72);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (23, 'intermediate', 15, 30, 'rock', '3:53 PM', 'group', 90, 96);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (24, 'intermediate', 15, 30, 'rock', '8:25 AM', 'ensembles', 98, 8);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (25, 'advance', 15, 30, 'classical', '3:55 PM', 'group', 23, 98);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (26, 'advance', 15, 30, 'rock', '4:14 PM', 'group', 72, 60);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (27, 'advance', 15, 30, 'country', '8:56 AM', 'ensembles', 24, 17);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (28, 'intermediate', 15, 30, 'disco', '4:21 PM', 'group', 99, 7);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (29, 'begginer', 15, 30, 'disco', '4:29 PM', 'ensembles', 46, 87);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (30, 'advance', 15, 30, 'reggae', '3:50 PM', 'indivisual', 38, 87);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (31, 'advance', 15, 30, 'reggae', '10:31 AM', 'indivisual', 46, 46);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (32, 'advance', 15, 30, 'country', '1:21 PM', 'indivisual', 43, 40);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (33, 'advance', 15, 30, 'rock', '4:14 PM', 'indivisual', 26, 68);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (34, 'begginer', 15, 30, 'country', '3:34 PM', 'group', 51, 46);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (35, 'advance', 15, 30, 'reggae', '3:29 PM', 'indivisual', 32, 35);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (36, 'begginer', 15, 30, 'rock', '12:33 PM', 'group', 51, 74);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (37, 'intermediate', 15, 30, 'country', '8:20 AM', 'ensembles', 89, 42);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (38, 'begginer', 15, 30, 'reggae', '8:21 AM', 'group', 35, 15);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (39, 'advance', 15, 30, 'disco', '1:32 PM', 'indivisual', 63, 8);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (40, 'begginer', 15, 30, 'classical', '1:18 PM', 'group', 64, 12);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (41, 'begginer', 15, 30, 'reggae', '1:51 PM', 'indivisual', 41, 18);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (42, 'begginer', 15, 30, 'country', '10:34 AM', 'indivisual', 93, 39);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (43, 'begginer', 15, 30, 'disco', '10:27 AM', 'group', 24, 94);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (44, 'advance', 15, 30, 'reggae', '4:06 PM', 'group', 88, 4);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (45, 'begginer', 15, 30, 'reggae', '4:24 PM', 'ensembles', 96, 86);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (46, 'advance', 15, 30, 'rock', '4:08 PM', 'ensembles', 78, 61);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (47, 'advance', 15, 30, 'disco', '10:42 AM', 'ensembles', 74, 5);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (48, 'intermediate', 15, 30, 'country', '10:24 AM', 'indivisual', 65, 82);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (49, 'intermediate', 15, 30, 'disco', '2:42 PM', 'group', 29, 1);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (50, 'intermediate', 15, 30, 'disco', '10:53 AM', 'group', 27, 14);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (51, 'begginer', 15, 30, 'rock', '8:16 AM', 'indivisual', 2, 5);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (52, 'advance', 15, 30, 'classical', '2:19 PM', 'ensembles', 75, 51);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (53, 'advance', 15, 30, 'disco', '10:30 AM', 'indivisual', 19, 34);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (54, 'advance', 15, 30, 'country', '11:19 AM', 'indivisual', 55, 64);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (55, 'intermediate', 15, 30, 'country', '9:18 AM', 'indivisual', 37, 33);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (56, 'advance', 15, 30, 'country', '1:45 PM', 'ensembles', 81, 20);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (57, 'intermediate', 15, 30, 'disco', '11:22 AM', 'ensembles', 17, 90);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (58, 'advance', 15, 30, 'rock', '4:25 PM', 'group', 31, 31);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (59, 'intermediate', 15, 30, 'rock', '3:12 PM', 'group', 30, 45);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (60, 'intermediate', 15, 30, 'classical', '3:39 PM', 'indivisual', 10, 29);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (61, 'advance', 15, 30, 'disco', '10:10 AM', 'ensembles', 48, 22);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (62, 'advance', 15, 30, 'reggae', '10:26 AM', 'ensembles', 55, 95);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (63, 'begginer', 15, 30, 'reggae', '12:58 PM', 'indivisual', 5, 65);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (64, 'intermediate', 15, 30, 'classical', '4:15 PM', 'group', 18, 78);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (65, 'intermediate', 15, 30, 'disco', '4:19 PM', 'group', 23, 91);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (66, 'intermediate', 15, 30, 'rock', '11:55 AM', 'group', 10, 12);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (67, 'begginer', 15, 30, 'country', '1:11 PM', 'indivisual', 3, 95);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (68, 'begginer', 15, 30, 'country', '12:30 PM', 'indivisual', 94, 32);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (69, 'intermediate', 15, 30, 'country', '4:11 PM', 'group', 61, 35);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (70, 'begginer', 15, 30, 'reggae', '2:52 PM', 'ensembles', 38, 98);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (71, 'begginer', 15, 30, 'classical', '1:17 PM', 'indivisual', 5, 44);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (72, 'intermediate', 15, 30, 'classical', '8:01 AM', 'indivisual', 71, 59);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (73, 'intermediate', 15, 30, 'classical', '10:18 AM', 'ensembles', 15, 16);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (74, 'advance', 15, 30, 'country', '11:18 AM', 'ensembles', 21, 93);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (75, 'advance', 15, 30, 'classical', '12:18 PM', 'indivisual', 2, 4);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (76, 'intermediate', 15, 30, 'country', '3:48 PM', 'ensembles', 63, 41);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (77, 'begginer', 15, 30, 'classical', '12:40 PM', 'group', 46, 43);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (78, 'advance', 15, 30, 'reggae', '2:05 PM', 'ensembles', 75, 90);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (79, 'intermediate', 15, 30, 'classical', '4:57 PM', 'ensembles', 75, 67);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (80, 'begginer', 15, 30, 'classical', '1:26 PM', 'ensembles', 38, 71);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (81, 'intermediate', 15, 30, 'classical', '11:43 AM', 'group', 17, 55);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (82, 'begginer', 15, 30, 'reggae', '9:09 AM', 'indivisual', 2, 27);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (83, 'advance', 15, 30, 'classical', '4:49 PM', 'ensembles', 58, 99);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (84, 'begginer', 15, 30, 'disco', '9:58 AM', 'ensembles', 42, 76);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (85, 'intermediate', 15, 30, 'rock', '1:21 PM', 'group', 98, 72);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (86, 'intermediate', 15, 30, 'country', '11:14 AM', 'ensembles', 87, 22);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (87, 'intermediate', 15, 30, 'reggae', '8:44 AM', 'ensembles', 8, 58);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (88, 'advance', 15, 30, 'country', '8:17 AM', 'indivisual', 20, 42);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (89, 'begginer', 15, 30, 'classical', '8:45 AM', 'ensembles', 63, 91);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (90, 'intermediate', 15, 30, 'rock', '2:42 PM', 'ensembles', 10, 67);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (91, 'intermediate', 15, 30, 'classical', '4:02 PM', 'group', 95, 39);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (92, 'intermediate', 15, 30, 'disco', '3:14 PM', 'ensembles', 18, 74);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (93, 'advance', 15, 30, 'country', '8:03 AM', 'indivisual', 77, 99);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (94, 'advance', 15, 30, 'classical', '9:08 AM', 'indivisual', 54, 5);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (95, 'intermediate', 15, 30, 'rock', '1:28 PM', 'ensembles', 66, 12);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (96, 'begginer', 15, 30, 'country', '4:52 PM', 'ensembles', 26, 73);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (97, 'intermediate', 15, 30, 'rock', '9:07 AM', 'indivisual', 88, 49);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (98, 'advance', 15, 30, 'disco', '1:59 PM', 'group', 42, 15);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (99, 'advance', 15, 30, 'reggae', '11:52 AM', 'group', 75, 94);
+insert into lesson (id, skill_level, min_student, max_student, genre, time, lesson_type, payment_id, instrument_id) values (100, 'intermediate', 15, 30, 'classical', '9:57 AM', 'ensembles', 33, 7);
